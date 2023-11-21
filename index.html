@@ -15,20 +15,17 @@
 </head>
 </head>
 
-<body>
+<body class="relative h-screen">
     <!-- navbar -->
     <nav class="flex justify-between p-4 sticky max-h-32">
         <div class="grid grid-cols-2 mt-2">
             <div class="flex items-start py-2">
                 <img src="./images/aptoide-logo-color.svg" alt="">
             </div>
-            <div class="flex items-start">
-                <div
-                    class="border-solid border px-4 py-2  border-grey-300 rounded-lg flex justify-between items-center">
-                    <input type="search" placeholder="Search here" class="border-none bg-transparent">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div>
+            <form class="h-10">
+                <input type="search" placeholder="Search here" class="w-full">
+                <button type="submit">Search</button>
+            </form>
         </div>
         <div class="hidden lg:block">
             <div class="grid grid-rows-2 grid-flow-col gap-4">
@@ -69,6 +66,31 @@
             <li class="flex items-center my-8">
                 <i class=" fa-solid fa-ellipsis-vertical w-12"></i>
                 <p class="text-lg">More</p>
+            </li>
+        </ul>
+    </div>
+    <!-- sidebar for tablet and mobile -->
+    <div class="absolute bottom-0 right-0 w-full lg:hidden pl-2 md:pl-6 border shadow-2xl custom-shadow">
+        <ul class="flex justify-between items-center text-gray-500">
+            <li class="flex flex-col items-center">
+                <i class="my-2 fa-solid fa-house"></i>
+                <p class="text-xs md:text-lg">Home</p>
+            </li>
+            <li class="flex flex-col items-center">
+                <i class="my-2 fa-solid fa-gamepad"></i>
+                <p class="text-xs md:text-lg">Games</p>
+            </li>
+            <li class="flex flex-col items-center">
+                <i class="my-2 fa-brands fa-windows"></i>
+                <p class="text-xs md:text-lg">Apps</p>
+            </li>
+            <li class="flex flex-col items-center">
+                <i class="my-2 fa-regular fa-rectangle-list"></i>
+                <p class="text-xs md:text-lg">Editorial</p>
+            </li>
+            <li class="flex flex-col items-center custom-more-btn custom-shadow border-grey-300 border p-4 shadow-2xl">
+                <i class="my-2 fa-solid fa-ellipsis-vertical"></i>
+                <p class="text-xs md:text-lg">More</p>
             </li>
         </ul>
     </div>
