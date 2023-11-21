@@ -44,56 +44,189 @@
             </div>
         </div>
     </nav>
-    <!-- laptop screen sidebar -->
-    <div class="hidden lg:block h-full w-1/5">
-        <ul class="text-gray-500 mx-10">
-            <li class="flex items-center">
-                <i class="fa-solid fa-house w-12"></i>
-                <p class="text-lg">Home</p>
-            </li>
-            <li class="flex items-center my-8">
-                <i class=" fa-solid fa-gamepad w-12"></i>
-                <p class="text-lg">Games</p>
-            </li>
-            <li class="flex items-center my-8">
-                <i class=" fa-brands fa-windows w-12"></i>
-                <p class="text-lg">Apps</p>
-            </li>
-            <li class="flex items-center my-8">
-                <i class=" fa-regular fa-rectangle-list w-12"></i>
-                <p class="text-lg">Editorial</p>
-            </li>
-            <li class="flex items-center my-8">
-                <i class=" fa-solid fa-ellipsis-vertical w-12"></i>
-                <p class="text-lg">More</p>
-            </li>
-        </ul>
-    </div>
     <!-- sidebar for tablet and mobile -->
     <div class="absolute bottom-0 right-0 w-full lg:hidden pl-2 md:pl-6 border shadow-2xl custom-shadow">
         <ul class="flex justify-between items-center text-gray-500">
-            <li class="flex flex-col items-center">
-                <i class="my-2 fa-solid fa-house"></i>
-                <p class="text-xs md:text-lg">Home</p>
+            <li>
+                <a href="" class="flex flex-col items-center">
+                    <i class="my-2 fa-solid fa-house"></i>
+                    <p class="text-xs md:text-lg">Home</p>
+                </a>
             </li>
-            <li class="flex flex-col items-center">
-                <i class="my-2 fa-solid fa-gamepad"></i>
-                <p class="text-xs md:text-lg">Games</p>
+            <li>
+                <a href="" class="flex flex-col items-center">
+                    <i class="my-2 fa-solid fa-gamepad"></i>
+                    <p class="text-xs md:text-lg">Games</p>
+                </a>
             </li>
-            <li class="flex flex-col items-center">
-                <i class="my-2 fa-brands fa-windows"></i>
-                <p class="text-xs md:text-lg">Apps</p>
+            <li>
+                <a href="" class="flex flex-col items-center">
+                    <i class="my-2 fa-brands fa-windows"></i>
+                    <p class="text-xs md:text-lg">Apps</p>
+                </a>
             </li>
-            <li class="flex flex-col items-center">
-                <i class="my-2 fa-regular fa-rectangle-list"></i>
-                <p class="text-xs md:text-lg">Editorial</p>
+            <li>
+                <a href="" class="flex flex-col items-center">
+                    <i class="my-2 fa-regular fa-rectangle-list"></i>
+                    <p class="text-xs md:text-lg">Editorial</p>
+                </a>
             </li>
-            <li class="flex flex-col items-center custom-more-btn custom-shadow border-grey-300 border p-4 shadow-2xl">
-                <i class="my-2 fa-solid fa-ellipsis-vertical"></i>
-                <p class="text-xs md:text-lg">More</p>
+            <li class="custom-more-btn custom-shadow border-grey-300 border p-4 shadow-2xl">
+                <a href="" class="flex flex-col items-center">
+                    <i class="my-2 fa-solid fa-ellipsis-vertical"></i>
+                    <p class="text-xs md:text-lg">More</p>
+                </a>
             </li>
         </ul>
     </div>
+    <!-- main section -->
+    <section class="grid grid-col-1 lg:grid-cols-8 gap-4">
+        <div class="col-span-1">
+            <!-- laptop screen sidebar -->
+            <div class="hidden lg:block h-full col-span-1">
+                <ul class="text-gray-500 mx-10">
+                    <li class="">
+                        <a href="" class="flex items-center">
+                            <i class="fa-solid fa-house w-12"></i>
+                            <p class="text-lg">Home</p>
+                        </a>
+                    </li>
+                    <li class="my-8">
+                        <a href="" class="flex items-center">
+                            <i class=" fa-solid fa-gamepad w-12"></i>
+                            <p class="text-lg">Games</p>
+                        </a>
+                    </li>
+                    <li class="my-8">
+                        <a href="" class="flex items-center">
+                            <i class=" fa-brands fa-windows w-12"></i>
+                            <p class="text-lg">Apps</p>
+                        </a>
+                    </li>
+                    <li class="my-8">
+                        <a href="" class="flex items-center">
+                            <i class=" fa-regular fa-rectangle-list w-12"></i>
+                            <p class="text-lg">Editorial</p>
+                        </a>
+                    </li>
+                    <li class="my-8">
+                        <a href="" class="flex items-center">
+                            <i class=" fa-solid fa-ellipsis-vertical w-12"></i>
+                            <p class="text-lg">More</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="col-span-7">
+            <div class="w-screen lg:w-10/12 overflow-scroll flex scroll-smooth focus:scroll-auto p-4 lg:p-0">
+                <img src="./images/carousel-1.png" alt="" class="rounded-lg mr-1 my-1">
+                <img src="./images/carousel-2.png" alt="" class="rounded-lg m-1">
+                <img src="./images/carousel-3.png" alt="" class="rounded-lg m-1">
+                <img src="./images/carousel-1.png" alt="" class="rounded-lg m-1">
+                <img src="./images/carousel-2.png" alt="" class="rounded-lg m-1">
+                <img src="./images/carousel-3.png" alt="" class="rounded-lg m-1">
+                <img src="./images/carousel-1.png" alt="" class="rounded-lg m-1">
+                <img src="./images/carousel-4.png" alt="" class="rounded-lg m-1">
+            </div>
+            <ul class="flex text-gray-500 link-text md:text-xs my-2 px-2">
+                <li class="mr-1 md:mr-2">
+                    <a href="">Homepage</a>
+                </li>
+                <li>
+                    <a href=""><span class="text-red-500 mx-1 md:mx-2">></span>Android Apps</a>
+                </li>
+                <li>
+                    <a href=""><span class="text-red-500 mx-1 md:mx-2">></span>Entertainment</a>
+                </li>
+                <li class="text-red-500">
+                    <a href=""><span class="mx-1 md:mx-2">></span>Earnhoney</a>
+                </li>
+            </ul>
+            <!-- description section -->
+            <section class="max-w-4xl p-2">
+                <div class="md:flex justify-end hidden">
+                    <ul class="flex">
+                        <li>
+                            <button
+                                class="rounded-full border-grey-300 border hover:bg-gray-700 hover:text-white w-8 h-8">
+                                <i class="fa-solid fa-qrcode"></i>
+                            </button>
+                        </li>
+                        <li class="mx-2">
+                            <button
+                                class="rounded-full border-grey-300 border hover:bg-gray-700 hover:text-white w-8 h-8">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-6 gap-4">
+                    <div class="col-span-2 md:col-span-1">
+                        <img src="./images/logo.jpeg" alt="">
+                    </div>
+                    <div class="col-span-3 md:col-span-2">
+                        <p class="text-xl font-semibold my-4">Earnhoney</p>
+                        <p class="text-xs text-gray-500 my-4">Earnhoney</p>
+                        <p class="text-xs text-green-500"><i class="fa-solid fa-check"></i> Trusted</p>
+                    </div>
+                    <div class="md:hidden col-span-1 flex justify-end">
+                        <ul class="flex mt-4">
+                            <li>
+                                <button
+                                    class="rounded-full border-grey-300 border hover:bg-gray-700 hover:text-white w-8 h-8">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                </button>
+                            </li>
+                            <li class="mx-2">
+                                <button
+                                    class="rounded-full border-grey-300 border hover:bg-gray-700 hover:text-white w-8 h-8">
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 md:col-span-1 text-center flex flex-col justify-center">
+                        <p class="text-lg md:text-xl font-semibold my-2 md:my-4">1.5K</p>
+                        <p class="text-xs">Downloads</p>
+                    </div>
+                    <div class="col-span-2 md:col-span-1 text-center flex flex-col justify-center">
+                        <p class="text-lg md:text-xl font-semibold my-2 md:my-4">6.5MB</p>
+                        <p class="text-xs">Size</p>
+                    </div>
+                    <div class="col-span-2 md:col-span-1 text-center flex flex-col justify-center">
+                        <p class="text-lg md:text-xl font-semibold my-2 md:my-4"><i
+                                class="fa-brands fa-android mx-1"></i>4.2.x+
+                        </p>
+                        <p class="text-xs">Android Version</p>
+                    </div>
+                    <div class="col-span-6 md:col-span-3">
+                        <button class="w-full text-xs text-gray-500 border rounded-lg p-2">
+                            <span class="text-black">1.1.0</span>
+                            <span class="mx-1">(07-01-2018)</span>
+                            <span>This is the latest version</span>
+                        </button>
+                    </div>
+                    <div class="col-span-6 md:col-span-3">
+                        <button class="w-full text-xs text-gray-500 border rounded-lg p-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>- (0 Reviews)</span>
+                        </button>
+                    </div>
+                    <div class="col-span-6">
+                        <button class="gradient-button text-white font-medium px-6 py-3 text-sm w-full">
+                            DOWNLOAD
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
 </body>
 
 </html>
