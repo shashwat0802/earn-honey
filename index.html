@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Honey</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="flex justify-between p-4 sticky max-h-32">
+        <div class="grid grid-cols-2 mt-2">
+            <div class="flex items-start py-2">
+                <img src="./images/aptoide-logo-color.svg" alt="">
+            </div>
+            <div class="flex items-start">
+                <div
+                    class="border-solid border px-4 py-2  border-grey-300 rounded-lg flex justify-between items-center">
+                    <input type="search" placeholder="Search here" class="border-none bg-transparent">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block">
+            <div class="grid grid-rows-2 grid-flow-col gap-4">
+                <div class="row-span-2"><img src="./images/aptoide-logo.svg" alt=""></div>
+                <div class="col-span-2">
+                    <p class="text-lg font-semibold">Aptoid App</p>
+                    <p class="text-sm">Free and unrestricted apps!</p>
+                </div>
+                <div class="col-span-2">
+                </div>
+                <div class="row-span-1 ">
+                    <button class="gradient-button text-white font-medium px-6 py-3 text-sm">
+                        DOWNLOAD
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- laptop screen sidebar -->
+    <div class="hidden lg:block h-full w-1/5">
+        <ul class="text-gray-500 mx-10">
+            <li class="flex items-center">
+                <i class="fa-solid fa-house w-12"></i>
+                <p class="text-lg">Home</p>
+            </li>
+            <li class="flex items-center my-8">
+                <i class=" fa-solid fa-gamepad w-12"></i>
+                <p class="text-lg">Games</p>
+            </li>
+            <li class="flex items-center my-8">
+                <i class=" fa-brands fa-windows w-12"></i>
+                <p class="text-lg">Apps</p>
+            </li>
+            <li class="flex items-center my-8">
+                <i class=" fa-regular fa-rectangle-list w-12"></i>
+                <p class="text-lg">Editorial</p>
+            </li>
+            <li class="flex items-center my-8">
+                <i class=" fa-solid fa-ellipsis-vertical w-12"></i>
+                <p class="text-lg">More</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

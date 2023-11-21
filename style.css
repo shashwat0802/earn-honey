@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.gradient-button {
+    background: linear-gradient(116.63deg, rgb(254, 145, 80) 8.97%, rgb(254, 100, 70) 92.93%);
+    border-radius: 16px;
+}
