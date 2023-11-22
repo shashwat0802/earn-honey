@@ -12,6 +12,8 @@
     <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+
 </head>
 </head>
 
@@ -225,6 +227,129 @@
                     </div>
                 </div>
             </section>
+            <!-- tabs section -->
+            <div class="max-w-4xl ">
+                <div class="border-b border-gray-200 dark:border-gray-700 mb-4">
+                    <ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                        <li class="mr-2" role="presentation">
+                            <button
+                                class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300"
+                                id="details-tab" data-tabs-target="#details" type="button" role="tab"
+                                aria-controls="details" aria-selected="false">Details</button>
+                        </li>
+                        <li class="mr-2" role="presentation">
+                            <button
+                                class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300 active"
+                                id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                                aria-controls="dashboard" aria-selected="true">Reviews</button>
+                        </li>
+                        <li class="mr-2" role="presentation">
+                            <button
+                                class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300"
+                                id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                                aria-controls="settings" aria-selected="false">Versions</button>
+                        </li>
+                        <li role="presentation">
+                            <button
+                                class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-sm font-medium text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300"
+                                id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab"
+                                aria-controls="contacts" aria-selected="false">Info</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="myTabContent">
+                    <div class="p-2 rounded-lg dark:bg-gray-800 hidden" id="details" role="tabpanel"
+                        aria-labelledby="details-tab">
+                        <div class="rounded-lg shadow-2xl p-4 text-sm">
+                            <p class="text-base font-semibold">Description of Earnhoney</p>
+                            <p>Get excited! Here is the EarnHoney mobile app!</p>
+                            <p class="my-4">Now you can have your favorite rewards portal right on your pocket. With
+                                EarnHoney for Android you can watch videos and earn HD$, in the same way you do today on
+                                www.earnhoney.com.</p>
+                        </div>
+                        <div class="grid grid-cols-2 my-8">
+                            <ul class="text-xs">
+                                <li class="text-base font-semibold">Earnhoney - Version 1.1.0</li>
+                                <li class="text-base my-2">What's new</li>
+                                <li>1.1.2</li>
+                                <li>- Bug fixes</li>
+                                <li>1.1.1</li>
+                                <li>- Bug fixes</li>
+                                <li>1.1.0</li>
+                                <li>- Google login.</li>
+                                <li>- Redeem prizes through the app available.</li>
+                                <li>- Bug fixes.</li>
+                            </ul>
+                            <div>
+                                <button
+                                    class="text-xs px-4 font-semibold py-2 rounded-lg border border-gray-500 text-gray-500 hover:bg-gray-600 hover:text-white">OTHER
+                                    VERSIONS</button>
+                            </div>
+                        </div>
+                        <p class="text-md font-semibold">Apps in the same category</p>
+                        <div
+                            class="w-screen lg:w-full overflow-scroll flex scroll-smooth focus:scroll-auto p-2 md:p-4 lg:p-0 my-2">
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/netfllix.png" alt="" class="rounded-lg">
+                                <p>Netflix</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/aptoide.png" alt="" class="rounded-lg">
+                                <p>Aptoide</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/roblox.png" alt="" class="rounded-lg">
+                                <p>Roblox</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/prime.png" alt="" class="rounded-lg">
+                                <p>Amazon prime videos</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/google.png" alt="" class="rounded-lg">
+                                <p>Phone by Google</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/roblox.png" alt="" class="rounded-lg">
+                                <p>Roblox</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                            <div class="text-sm font-semibold p-4">
+                                <img src="./images/aptoide.png" alt="" class="rounded-lg">
+                                <p>Aptoide</p>
+                                <p class="mt-3 text-gray-500"><i class="fa-solid fa-star mr-2"></i>3.7</p>
+                            </div>
+                        </div>
+                        <p class="text-md font-semibold">You may also like...</p>
+                    </div>
+                    <div class="p-4 rounded-lg dark:bg-gray-800" id="dashboard" role="tabpanel"
+                        aria-labelledby="dashboard-tab">
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">This is some placeholder content the <strong
+                                class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated
+                                content</strong>. Clicking another tab will toggle the visibility of this one for the
+                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    </div>
+                    <div class="p-4 rounded-lg dark:bg-gray-800 hidden" id="settings" role="tabpanel"
+                        aria-labelledby="settings-tab">
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">This is some placeholder content the <strong
+                                class="font-medium text-gray-800 dark:text-white">Settings tab's associated
+                                content</strong>. Clicking another tab will toggle the visibility of this one for the
+                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    </div>
+                    <div class="p-4 rounded-lg dark:bg-gray-800 hidden" id="contacts" role="tabpanel"
+                        aria-labelledby="contacts-tab">
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">This is some placeholder content the <strong
+                                class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
+                                content</strong>. Clicking another tab will toggle the visibility of this one for the
+                            next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                    </div>
+                </div>
+            </div>
             <!-- footer -->
             <footer class="max-w-4xl p-4">
                 <div class="grid grid-cols-4 text-gray-500 text-sm gap-2 md:gap-6">
@@ -312,5 +437,6 @@
         </div>
     </section>
 </body>
+<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
 
 </html>
